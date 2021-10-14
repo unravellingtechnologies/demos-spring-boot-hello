@@ -34,4 +34,11 @@ class HelloControllerTest {
     assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
     assertThat(result.getBody()).isEqualTo(String.format("Hello there, %s!", name));
   }
+
+  @Test
+  @DisplayName("fails with service unavailable")
+  void serviceUnavailable() {
+    ResponseEntity<String> result = helloController.serviceUnavailable();
+    assertThat(result.getStatusCode()).isEqualTo(HttpStatus.SERVICE_UNAVAILABLE);
+  }
 }

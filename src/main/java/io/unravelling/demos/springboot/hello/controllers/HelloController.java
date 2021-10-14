@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/api/v1")
-class HelloController {
+public class HelloController {
 
   @GetMapping("/greet")
-  ResponseEntity<String> greet(@RequestParam(required = false) final String name) {
+  public ResponseEntity<String> greet(@RequestParam(required = false) final String name) {
     String message = name != null && ! name.isEmpty() ? String.format("Hello there, %s!", name) : "Hello there!";
     return ResponseEntity.ok(message);
   }

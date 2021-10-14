@@ -13,7 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 @ExtendWith(MockitoExtension.class)
-public class HelloControllerTest {
+class HelloControllerTest {
 
   @InjectMocks
   private HelloController helloController;

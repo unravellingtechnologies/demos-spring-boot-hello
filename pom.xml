@@ -67,6 +67,12 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.unravelling.logging</groupId>
+            <artifactId>logback-memory-appender</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -88,5 +94,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

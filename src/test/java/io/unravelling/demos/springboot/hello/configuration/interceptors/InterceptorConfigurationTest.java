@@ -18,7 +18,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
  */
 @ExtendWith(MockitoExtension.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class InterceptorConfigurationTest {
+class InterceptorConfigurationTest {
 
     @Mock
     ControllerInterceptor controllerInterceptor;

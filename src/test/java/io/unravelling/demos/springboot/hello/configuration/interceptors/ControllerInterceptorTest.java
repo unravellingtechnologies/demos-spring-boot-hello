@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(MockitoExtension.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class ControllerInterceptorTest {
+class ControllerInterceptorTest {
 
   private ControllerInterceptor controllerInterceptor;
 
@@ -57,7 +57,7 @@ public class ControllerInterceptorTest {
   }
 
   @Test
-  public void preHandle() {
+  void preHandle() {
     controllerInterceptor.preHandle(request, response, handler);
     assertTrue(appender.contains("Received request on /api/v1/test"));
     assertTrue(appender.contains("Http headers"));

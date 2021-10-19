@@ -14,8 +14,6 @@ public class ControllerInterceptor implements HandlerInterceptor {
 
   private static final Logger logger = LoggerFactory.getLogger(ControllerInterceptor.class);
 
-  //public ControllerInterceptor() {}
-
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
     logger.info("Received request on {}", request.getRequestURI());

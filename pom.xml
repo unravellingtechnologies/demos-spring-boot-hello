@@ -120,7 +120,7 @@
                         <image>${container.image.base}</image>
                     </from>
                     <to>
-                        <image>ghcr.io/unravellingtechnologies/demos-spring-boot-hello</image>
+                        <image>ghcr.io/unravellingtechnologies/demos-spring-boot-hello:${project.version}</image>
                         <auth>
                             <username>${env.REGISTRY_USERNAME}</username>
                             <password>${env.REGISTRY_PASSWORD}</password>

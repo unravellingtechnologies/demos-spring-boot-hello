@@ -13,6 +13,21 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>hello</name>
     <description>hello</description>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/unravellingtechnologies/*</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <properties>
         <java.version>15</java.version>
 
